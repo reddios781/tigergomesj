@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiger Story - Mining Game</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1.2em;
+    }
+    button {
+      background-color: #ff9900;
+      border: none;
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      border-radius: 10px;
+      cursor: pointer;
+      color: #fff;
+    }
+    button:hover {
+      background-color: #cc7a00;
+    }
+    #count {
+      font-size: 2em;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tiger Story</h1>
+  <p>Click the button to start mining and earn Tiger Coins!</p>
+  <div id="count">0</div>
+  <button onclick="mine()">Mine Coin</button>
+  <button onclick="refer()">Get Referral Link</button>
+  <button onclick="missions()">View Missions</button>  <script>
+    let coins = 0;
+    function mine() {
+      coins++;
+      document.getElementById('count').innerText = coins;
+    }
+    function refer() {
+      alert("Your referral link: https://tigerstory.com/invite?ref=yourusername");
+    }
+    function missions() {
+      alert("Coming soon: Complete tasks to earn bonus coins!");
+    }
+  </script></body>
+</html>
